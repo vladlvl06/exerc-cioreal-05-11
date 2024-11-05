@@ -1,0 +1,44 @@
+
+ .carousel-item {
+    height: 100vh; 
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+#img3 {
+    height: 350px;
+    width: auto;
+    object-fit: cover;  
+}
+
+#imgtk {
+    height: 400px;
+    width: auto;
+    object-fit: cover;  
+}
+
+#imgtk2 {
+    height: 500px;
+    width: auto;
+    object-fit: cover;  
+}
+
+#imgtk3 {
+    height: 300px;
+    width: auto;
+    object-fit: cover;  
+}
+
+#imgtk4 {
+    height: 590px;
+    width: auto;
+    object-fit: cover;  
+}
+body {
+    background-color: black;
+}
+

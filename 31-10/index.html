@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Responsivo</title>
+    <link rel="icon" href="img/pngegg.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/pngegg.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                   Tokyo ghoul
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/thumb-1920-161319.png" class="d-block w-100" id="img1" alt="Imagem 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tokyo ghoul</h5>
+                    <p>Kaneki</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/qqr-coisa.jpg" class="d-block w-100" id="img2" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tokyo ghoul</h5>
+                    <p>Arima</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/furutaaa.jpg" class="d-block w-100" alt="Imagem 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tokyo ghoul</h5>
+                    <p>Furuta</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    
+        <div class="carousel-indicators">
+
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          
+      </div>
+    </div>
+
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Black-haired_Sasaki_with_glasses.webp" class="card-img-top" id="img3" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ken Kaneki</h5>
+                        <p class="card-text">"O pássaro tem que lutar para sair do ovo. O ovo é o mundo. Aquele que nasce, primeiro deve destruir um mundo."</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Arima_saying_goodbye_to_Fura.webp" class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Kishou Arima</h5>
+                        <p class="card-text">"Eu sempre odiei isso. Eu me odiava, que só roubava dos outros. Sinto que finalmente fui capaz de deixar algo para trás"</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Nimura_revealing_that_hes_a_Ghoul (1).webp" class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kichimura Washuu</h5>
+                        <p class="card-text">"Não há necessidade real de ter uma razão para fazer as coisas. Pessoas que não podem agir sem uma razão são lixo."</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ken Kaneki</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p>Kaneki Ken (金 木 研, Ken Kaneki) é o protagonista de Tokyo Ghoul.
+
+                Anteriormente, Kaneki Ken era um universitário que estudava literatura japonesa na Universidade de Kamii e vivia uma vida normal. Tudo mudou depois de ter conhecido Rize Kamishiro que levou ele para uma armadilha que tentou devorá-lo, porém após um acidente no local, ferragens cairam nela, que acabou sendo esmagada e morrendo. Os orgãos dela foram transplantados em Kaneki e ele se tornou um Ghoul de Um Olho.
+                <img src="img/kaneki4.png" id="imgtk" alt="">    
+                Depois de ingressar Anteiku como garçon, em tempo parcial, ele aprende a viver como um Ghoul, ficando conhecido como Tapa-olho (眼 帯, Gantai).
+                    
+                Depois de ser capturado por Aogiri Tree, ele foi capaz de aceitar seu lado ghoul, formando uma equipe com o objetivo de proteger os seus mais preciosos, e "arrancar" as pessoas que ameaçam o lugar onde ele pertence. Por causa de sua aparência distinta da Kakuja, o CCG lhe deu o apelido centopeia (百足, Mukade).
+                    
+                Atualmente, ele vive sob a identidade de Haise Sasaki (佐 々 木 琲 世, Sasaki Haise), como um Investigador Ghoul de Classe Especial Associado, e serviu como o mentor do Esquadrão Quinx e membro da Equipa Mado. No entanto, ele perdeu as memórias do seu passado, deixando-o inconsciente do seu verdadeiro eu até o capítulo 53.
+                <img src="img/kaneki5.png" id="imgtk3" alt=""></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Kishou Arima</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+            
+                <p>Kishou Arima (有馬 貴将, Arima Kishō ) foi um Investigador Ghoul de Classe Especial , conhecido como o CCG's Reaper (CCGの死神, Shīshījī no Shinigami ). Ele era uma figura proeminente dentro da organização e era amplamente considerado um gênio. No spin-off prequel Tokyo Ghoul: Jack , ele é apresentado ao lado de Taishi Fura como um adolescente.
+
+                Ele acumulou uma lista impressionante de conquistas durante seus dezoito anos como investigador, desde liderar o prestigioso Esquadrão S3 até virar sozinho a maré de grandes operações. Sua destreza letal em batalha lhe rendeu muitos nomes, incluindo o Ceifador Branco (白い死神, Shiroi Shinigami ), entre outros.
+                <img src="img/arima1.png" id="imgtk" alt="">    
+                No entanto, abaixo da superfície, Arima estava do lado dos ghouls como o misterioso Rei de um Olho (隻眼の王, Sekigan no Ō ). Conspirando com Eto Yoshimura , ele ganhou os direitos de propriedade de Ken Kaneki após a Operação de Supressão da Coruja e o orientou na preparação para conceder o título a ele após sua morte.
+                 <img src="img/arima2.png" id="imgtk2" alt=""></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Kichimura Washuu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kichimura Washuu (ū 修 吉福, Washu Kichimura) é o principal antagonista da série e ex-diretor do Bureau do CCG. Ele está envolvido em inúmeras organizações e responsável por vários grandes eventos da série.
+
+                    Ele era originalmente Souta Washuu-Furuta, o filho ilegítimo do ex-presidente do CCG, Tsuneyoshi Washuu, e um agente do V criado no Sunlit Garden. Enquanto trabalhava como Investigador de Carniçal de Grau 1, ele usou o pseudônimo de Nimura Furuta (Fur 多 二 福, Furuta Nimura).
+                        
+                    Para promover sua própria agenda, ele usou várias identidades para se infiltrar em organizações ou construir alianças pessoais. Como um membro dos palhaços, ele atende pelo nome Souta (太 太, Sōta) e foi responsável pelo Incidente Steel Beam. Ele também se juntou ao Ghoul Restaurant como PG e foi parceiro dos experimentos de carniçal de Akihiro Kanou. Como Ken Kaneki, ele é um ghoul artificial de um olho que possui o kagune de Rize Kamishiro.
+                    <img src="img/furuta6.jpg" id="imgtk4" alt="">    
+                    Enquanto posava como um investigador aparentemente normal, ele fez uma parceria com o Shiki Kijima. Após a morte de seu superior, ele se tornou o parceiro de Haise Sasaki, a fim de monitorar seus superiores em V. Durante a Terceira Incursão da Cóclea, ele usou o caos para encenar um golpe de estado do Clã Washuu com a ajuda de membros da os Palhaços e V. Ele então se declara o Rei Washuu (Wash 修 の 王, Washu no Ō), em contraste com Kaneki reivindicando o título do Rei de Um Olho.
+                        
+                    Usando o Clown Siege como uma frente, ele se estabeleceu como chefe do CCG e removeu Matsuri Washuu da sucessão. Após o surgimento de Dragão da 24ª Ala, Kichimura se demite de sua posição.
+                    <img src="img/furuta3.jpg" id="imgtk2" alt=""></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
